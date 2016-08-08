@@ -1,1 +1,14 @@
 @import url(https://fonts.googleapis.com/css?family=Crimson+Text:600,700);
+
+@import 'fonts';
+
+@charset "utf-8";
+
+$dlf-blue: #0165AE;
+
+.site-title {
+  font-family: 'Crimson Text', serif;
+  //a {
+    //color: $dlf-blue;
+  //}
+}

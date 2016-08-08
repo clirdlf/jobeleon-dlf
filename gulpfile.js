@@ -13,7 +13,7 @@ gulp.task('browser-sync', function() {
   var files = [
     '**/*.php',
     '**/*.{png,jpg,gif}',
-    '**/*.css'
+    '**/**/*.css'
   ];
 
   browserSync.init(files, {
