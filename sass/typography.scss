@@ -9,7 +9,8 @@ body {
 }
 
 .site-title {
-	font-family: 'Expletus Sans', sans-serif;
+	//font-family: 'Expletus Sans', sans-serif;
+  font-family: 'Crimson Text', serif;
 	font-weight: 600;
 	@include adjust-font-size-to( 32px );
 }
