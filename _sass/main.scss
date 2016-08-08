@@ -4,7 +4,67 @@
 
 @charset "utf-8";
 
-$dlf-blue: #0165AE;
+$dlf-blue:      #0165AE;
+$twitter-blue:  #4099FF;
+$rss-orange:    #F17330;
+$linkedin-blue: #0177b5;
+$envelope-red:  #d83232;
+$gray-dark:     #333;
+$gray-light:    #eef2f5;
+
+.bg-gray {
+  background-color: $gray-light;
+  border-bottom: 1px solid #e9e9e9;
+  border-top: 1px solid #e9e9e9;
+}
+
+footer {
+
+  color: #4c5667;
+  font-weight: 400;
+  font-size: 14px;
+  font-family: 'Open Sans', sans-serif;
+
+  address {
+    margin-bottom: 20px;
+    font-style: normal;
+    line-height: 1.42857143;
+  }
+
+  .envelope { color: $envelope-red; }
+  .linkedin { color: $linkedin-blue; }
+  .rss      { color: $rss-orange; }
+  .twitter  { color: $twitter-blue; }
+
+  h5 {
+    color: $gray-dark;
+    font-size: 15px;
+    margin-bottom: 20px;
+    font-weight: 700;
+    letter-spacing: 1px;
+  }
+
+  .logo {
+    font-weight: 700;
+    font-size: 22px;
+    color: #111 !important;
+    letter-spacing: 1px;
+  }
+
+  p {
+    margin: 0 0 10px;
+  }
+
+  .row {
+    margin-right: -15px;
+    margin-left: -15px;
+  }
+
+  .col-md-12 {
+    width: 100%;
+  }
+
+}
 
 .site-title {
   font-family: 'Crimson Text', serif;

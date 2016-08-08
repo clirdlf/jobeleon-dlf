@@ -24,5 +24,12 @@ function theme_enqueue_styles()
   wp_enqueue_style('parent-style', get_template_directory_uri() . '/style.css');
 }
 
+function theme_script_dependencies()
+{
+  wp_enqueue_script('font-awesome', 'https://use.fontawesome.com/c1ca2c16bc.js');
+}
+
 add_action('wp_enqueue_scripts', 'theme_enqueue_styles');
+add_action('wp_enqueue_scripts', 'theme_script_dependencies');
+
 

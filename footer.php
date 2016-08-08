@@ -58,7 +58,12 @@ $full_width = in_array( basename( get_page_template() ), array("full-width.php",
 
   <div class="row">
     <div class="col-md-12">
-      DLF
+      <div class="footer-alt">
+        <p class="pull-right">pull-right text</p>
+        <p class="logo">
+          <a href="https://diglib.org"><i class="icon-dlf-logo blue"></i> <span class="dlf">DLF</span></a>
+        </p>
+      </div>
     </div>
   </div>
 
