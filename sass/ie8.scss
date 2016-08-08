@@ -1,0 +1,37 @@
+#content {
+        /* responsive fix */
+        img { 
+                        width: auto;
+                }
+}
+
+#wpjb-step {
+        li:first-child:before {
+                content: '1';
+        }
+        li:before {
+                content: '2';
+        }
+}
+
+#footer {
+        width: 72.7% !important;
+}
+
+#wpjb-job-list {
+        width: 100% !important;
+        margin-left: 3.4%;
+        tr {
+                display: table-row !important;
+        }
+}
+
+.wpjb-sub-filters li,
+.wpjb-sub-filters li a {
+        border: none !important;
+}
+
+#header .site-title,
+#header .site-navigation {
+        height: 100%;
+}

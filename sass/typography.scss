@@ -1,0 +1,77 @@
+$base-font-size: 14px;
+$base-line-height: 24px;
+@include establish-baseline;
+
+body {
+	font-family: 'Open Sans', sans-serif;
+	font-size: 100%;
+	line-height: 1.714em;
+}
+
+.site-title {
+	font-family: 'Expletus Sans', sans-serif;
+	font-weight: 600;
+	@include adjust-font-size-to( 32px );
+}
+
+.site-navigation {
+	@include adjust-font-size-to( 13px );
+	font-weight: 600;
+}
+
+.where-am-i {
+	@include adjust-font-size-to( 17px );
+}
+
+.widget-title {
+	@include adjust-font-size-to( 14px );	
+}
+
+.widget {
+	@include adjust-font-size-to( 13px );
+}
+
+#content {
+	.entry-title {
+		@include adjust-font-size-to( 20px );
+		font-weight: 600;
+	}
+	.entry-meta {
+		@include adjust-font-size-to( 13px );
+	}
+	h2 {
+		@include adjust-font-size-to( 17px );
+	}
+	h3 {
+		@include adjust-font-size-to( 15px );
+	}
+	h4 {
+		@include adjust-font-size-to( 14px );
+	}
+	h5 {
+		@include adjust-font-size-to( 13px );
+	}
+	blockquote {
+		@include adjust-font-size-to( 18px );
+	}
+	.navigation-paging {
+		@include adjust-font-size-to( 12px );
+	}
+	.comment-meta {
+		@include adjust-font-size-to( 12px );
+	}
+	#reply-title {
+		@include adjust-font-size-to( 17px );
+	}
+}
+
+.ab-header {
+	@include adjust-font-size-to( 17px );
+}
+.m-head {
+	@include adjust-font-size-to( 15px );
+}
+
+#footer {
+	@include adjust-font-size-to( 13px );
+}

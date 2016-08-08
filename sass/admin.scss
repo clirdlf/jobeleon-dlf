@@ -1,0 +1,37 @@
+@import "compass/css3";
+/* ADMIN */
+/* customizer colorscheme */
+$green: #9ecf32;
+#customize-control-wpjobboard_theme_color_scheme {
+        .wpjb-colorscheme {
+                width: 32px;
+                height: 32px;
+                display: block;
+                @include border-radius( 5px );
+                float: left;
+                margin: 1em;
+                line-height: 32px;
+                input {
+                        text-indent: 0;
+                        width: 32px;
+                        line-height: 32px;
+                        text-align: center;
+                }
+                .wpjb-colorscheme-text {
+                        display: none;
+                }
+        }
+        .wpjb-colorscheme-green {
+                background: $green;
+        }
+        .wpjb-colorscheme-blue {
+                background: #5cace2;
+        }
+        .wpjb-colorscheme-mint {
+                background: #3abd8f;
+        }
+        .wpjb-colorscheme-red {
+                background: #e74c3c;
+        }
+}
+
