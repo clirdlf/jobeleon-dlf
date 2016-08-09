@@ -25,8 +25,14 @@ $full_width = in_array( basename( get_page_template() ), array("full-width.php",
 </div><!-- .table-row -->
 <?php endif; ?>
 
-<footer id="footer" class="<?php echo $full_width ? "footer-full-width" : "" ?>" role="contentinfo">
-  <div class="col-md-4">
+
+</div><!-- .wrapper -->
+
+<footer id="footer" class="bg-gray">
+
+<div class="container" role="contentinfo">
+<div class="row">
+  <div class="col-md-4 col-sm-6">
     <h5>Contact</h5>
     <address>
       CLIR+DLF<br>
@@ -38,7 +44,7 @@ $full_width = in_array( basename( get_page_template() ), array("full-width.php",
     </address>
   </div>
 
-  <div class="col-md-4">
+  <div class="col-md-4 col-sm-6">
     <h5>Elsewhere</h5>
       <ul class="list-unstyled">
         <li><a href="https://twitter.com/CLIRDLF"><i class="fa fa-twitter twitter"></i> @CLIRDLF</a></li>
@@ -48,37 +54,29 @@ $full_width = in_array( basename( get_page_template() ), array("full-width.php",
       </ul>
   </div>
 
-  <div class="col-md-4">
-    <p class="logo">About This Calendar</p>
+  <div class="col-md-4 col-sm-6">
+    <p class="logo">About DLF Jobs</p>
     <p>
         Maintained by the <a href="https://diglib.org">Digital Library Federation</a>.
     </p>
   </div>
+</div>
+</div>
 
-
+<div class="container">
   <div class="row">
     <div class="col-md-12">
       <div class="footer-alt">
         <p class="pull-right">pull-right text</p>
         <p class="logo">
           <a href="https://diglib.org"><i class="icon-dlf-logo blue"></i> <span class="dlf">DLF</span></a>
-        </p>
+        </p><D-^>
       </div>
     </div>
   </div>
+</div>
+</footer>
 
-<!--
-    <nav class="footer-navigation">
-        <?php wp_nav_menu(array('theme_location' => 'footer')); ?>
-    </nav>
-    <div class="footer-content">
-        <p>Powered by <a href="http://wordpress.org/" target="_blank">WordPress</a> and <a href="http://wpjobboard.net/" target="_blank">WPJobBoard</a></p>
-    </div>
--->
-</footer><!-- #colophon .site-footer -->
-
-
-</div><!-- .wrapper -->
 <?php wp_footer(); ?>
 
 <script>
