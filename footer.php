@@ -24,11 +24,11 @@ $full_width = in_array( basename( get_page_template() ), array("full-width.php",
 <?php if(!$is_map): ?>
 </div><!-- .table-row -->
 <?php endif; ?>
-
+<div id="footer"></div><!-- hack to fix JS -->
 
 </div><!-- .wrapper -->
 
-<footer id="footer" class="bg-gray">
+<footer class="bg-gray">
 
 <div class="container" role="contentinfo">
 <div class="row">
