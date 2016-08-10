@@ -32,7 +32,7 @@ $full_width = in_array( basename( get_page_template() ), array("full-width.php",
 
 <div class="container" role="contentinfo">
 <div class="row">
-  <div class="col-md-4 col-sm-6">
+  <div class="col-md-3 col-sm-6">
     <h5>Contact</h5>
     <address>
       CLIR+DLF<br>
@@ -44,7 +44,7 @@ $full_width = in_array( basename( get_page_template() ), array("full-width.php",
     </address>
   </div>
 
-  <div class="col-md-4 col-sm-6">
+  <div class="col-md-3 col-sm-6">
     <h5>Elsewhere</h5>
       <ul class="list-unstyled">
         <li><a href="https://twitter.com/CLIRDLF"><i class="fa fa-twitter twitter"></i> @CLIRDLF</a></li>
@@ -54,11 +54,14 @@ $full_width = in_array( basename( get_page_template() ), array("full-width.php",
       </ul>
   </div>
 
-  <div class="col-md-4 col-sm-6">
+  <div class="col-md-3 col-sm-6">
+    <h5>
+  </div>
+
+  <div class="col-md-3 col-sm-6">
     <p class="logo">About DLF Jobs</p>
-    <p>
-        Maintained by the <a href="https://diglib.org">Digital Library Federation</a>.
-    </p>
+    <p>Postings are free for <a href="https://www.diglib.org/members/">DLF Members</a>, and $200 for non-members, which includes friendly, customized promotion of your position through our various communications and social media channels.&nbsp;We want to help you attract great candidates!</p>
+    <p>Non-members may <a href="https://squareup.com/market/clir-slash-dlf/job-posting-on-the-dlf-website" target="_blank">pay online</a> or request an invoice.</p>
   </div>
 </div>
 </div>
@@ -67,10 +70,10 @@ $full_width = in_array( basename( get_page_template() ), array("full-width.php",
   <div class="row">
     <div class="col-md-12">
       <div class="footer-alt">
-        <p class="pull-right">pull-right text</p>
+        <p class="pull-right">&nbsp;</p>
         <p class="logo">
           <a href="https://diglib.org"><i class="icon-dlf-logo blue"></i> <span class="dlf">DLF</span></a>
-        </p><D-^>
+        </p>
       </div>
     </div>
   </div>
@@ -80,6 +83,14 @@ $full_width = in_array( basename( get_page_template() ), array("full-width.php",
 <?php wp_footer(); ?>
 
 <script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+
+  ga('create', 'UA-9461551-4', 'auto');
+  ga('send', 'pageview');
+
   jQuery(document).ready(function(){
     jQuery('a[href^="mailto:"]').each(function() {
       this.href = this.href.replace('(at)', '@').replace(/\(dot\)/g, '.');
