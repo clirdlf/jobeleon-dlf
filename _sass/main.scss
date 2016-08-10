@@ -49,6 +49,10 @@ footer {
   font-size: 14px;
   font-family: 'Open Sans', sans-serif;
 
+  a {
+		transition: 0.5s all linear;
+  }
+
   address {
     margin-bottom: 20px;
     font-style: normal;
