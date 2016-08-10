@@ -59,9 +59,8 @@ $full_width = in_array( basename( get_page_template() ), array("full-width.php",
   </div>
 
   <div class="col-md-3 col-sm-6">
-    <p class="logo">About DLF Jobs</p>
-    <p>Postings are free for <a href="https://www.diglib.org/members/">DLF Members</a>, and $200 for non-members, which includes friendly, customized promotion of your position through our various communications and social media channels.&nbsp;We want to help you attract great candidates!</p>
-    <p>Non-members may <a href="https://squareup.com/market/clir-slash-dlf/job-posting-on-the-dlf-website" target="_blank">pay online</a> or request an invoice.</p>
+    <p class="logo">What's the DLF?</p>
+    <p>We are networked member institutions and a robust community of practice—<em>advancing research, learning, social justice, & the public good</em> through digital library technologies. <a href="https://www.diglib.org/members/join/">Join us!</a></p>
   </div>
 </div>
 </div>
