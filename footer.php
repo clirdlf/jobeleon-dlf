@@ -63,7 +63,7 @@ $full_width = in_array( basename( get_page_template() ), array("full-width.php",
 
   <div class="col-md-3 col-sm-6">
     <p class="logo">What's the DLF?</p>
-    <p>We are networked member institutions and a robust community of practice—<em>advancing research, learning, social justice, & the public good</em> through digital library technologies. <a href="https://www.diglib.org/members/join/">Join us!</a></p>
+    <p>We are networked member institutions and a robust community of practice—<em>advancing research, learning, social justice, &amp; the public good</em> through digital library technologies. <a href="https://www.diglib.org/members/join/" class="btn btn-default btn-info">Join us!</a></p>
   </div>
 </div>
 </div>
