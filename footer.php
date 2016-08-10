@@ -55,7 +55,10 @@ $full_width = in_array( basename( get_page_template() ), array("full-width.php",
   </div>
 
   <div class="col-md-3 col-sm-6">
-    <h5>
+    <h5>DLF Community Calendar</h5>
+    <div id="calendar">
+      <ul class="list-unstyled" id="upcoming-events"></ul>
+    </div>
   </div>
 
   <div class="col-md-3 col-sm-6">

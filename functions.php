@@ -27,6 +27,9 @@ function theme_enqueue_styles()
 function theme_script_dependencies()
 {
   wp_enqueue_script('font-awesome', 'https://use.fontawesome.com/c1ca2c16bc.js');
+  wp_enqueue_script('moment', 'https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.14.1/moment.min.js');
+  wp_enqueue_script('format-google-calendar',  get_stylesheet_directory_uri() . '/js/vendor/format-google-calendar.js');
+  wp_enqueue_script('main',  get_stylesheet_directory_uri() . '/js/main.js');
 }
 
 add_action('wp_enqueue_scripts', 'theme_enqueue_styles');
