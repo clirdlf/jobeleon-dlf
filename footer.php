@@ -55,10 +55,11 @@ $full_width = in_array( basename( get_page_template() ), array("full-width.php",
   </div>
 
   <div class="col-md-3 col-sm-6">
-    <h5><a href="http://digital-conferences-calendar.info">Community Calendar</a></h5>
+    <h5>From the Calendar</h5>
     <div id="calendar">
       <ul class="list-unstyled" id="upcoming-events"></ul>
     </div>
+    <p>See more <a href="http://digital-conferences-calendar.info">DLF Community Calendar</a> events.</p>
   </div>
 
   <div class="col-md-3 col-sm-6">
