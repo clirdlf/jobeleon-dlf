@@ -55,16 +55,17 @@ $full_width = in_array( basename( get_page_template() ), array("full-width.php",
   </div>
 
   <div class="col-md-3 col-sm-6">
-    <h5>From the Calendar</h5>
+    <h5>From the DLF Calendar</h5>
     <div id="calendar">
       <ul class="list-unstyled" id="upcoming-events"></ul>
     </div>
-    <p>See more <a href="http://digital-conferences-calendar.info">DLF Community Calendar</a> events.</p>
+    <p>More <a href="http://digital-conferences-calendar.info">Community Calendar</a> events.</p>
   </div>
 
   <div class="col-md-3 col-sm-6">
-    <p class="logo">What's the DLF?</p>
-    <p>We are networked member institutions and a robust community of practice—<em>advancing research, learning, social justice, &amp; the public good</em> through digital library technologies.</br><a href="https://www.diglib.org/members/join/" class="btn btn-default btn-info">Join us!</a></p>
+    <h5>What's the DLF?</h5>
+    <p>We are networked member institutions and a robust community of practice—<em>advancing research, learning, social justice, &amp; the public good</em> through digital library technologies.</p>
+    <p><a href="https://www.diglib.org/members/join/" class="btn btn-default btn-info">Join us!</a></p>
   </div>
 </div>
 </div>
