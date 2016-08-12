@@ -24,7 +24,7 @@
       itemsTagName: 'li',
       upcomingSelector: '#upcoming-events',
       upcomingHeading: '',
-      format: ['<h5>', '*summary*', '</h5><p> ', '*date*', ' </p> ']
+      format: ['<p>', '*summary*', '</p><p>', '*date*', ' </p> ']
     });
   });
 })(jQuery);
