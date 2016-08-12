@@ -1,4 +1,3 @@
-@import url(https://fonts.googleapis.com/css?family=Crimson+Text:600,700);
 @import url(https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css);
 
 @import 'variables';
@@ -77,10 +76,13 @@ footer {
 
   #upcoming-events {
     li {
-      h5 { margin-bottom: 5px; }
+      h5 {
+        font-weight: 400;
+        margin-bottom: 5px;
+      }
       p {
         margin: 2px;
-        padding-left: 10px;
+        //padding-left: 10px;
       }
     }
   }
