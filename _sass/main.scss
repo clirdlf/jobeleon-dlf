@@ -6,6 +6,12 @@
 
 @charset "utf-8";
 
+//Temporary override of injected overlays
+
+#wpjb-file-delete, #wpjb-file-upload-overlay, #wpjb-media-library-overlay {
+  display: none;
+}
+
 .blue { color: $dlf-blue; }
 
 .bg-gray {
