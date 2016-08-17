@@ -34,11 +34,11 @@ function theme_script_dependencies()
 
 function dlf_wpjb_scheme($scheme, $object)
 {
-    if (isset($object->meta->custom_url)) {
-        $scheme["field"]["custom_url"]["render_callback"] = "my_render_as_link";
-    }
-
-    return $scheme;
+  if (isset($object->meta->apply_url)) {
+    $scheme["field"]["apply_url"];
+    $scheme["field"]["apply_url"]["render_callback"] = "render_as_link";
+  }
+  return $scheme;
 }
 
 /**
@@ -46,8 +46,8 @@ function dlf_wpjb_scheme($scheme, $object)
  */
 function render_as_link($object)
 {
-    $url = $object->meta->custom_url->value();
-    echo sprintf('<a href="%s" target="_blank">%s</a>', esc_attr($url), esc_html($url));
+  $url = $object->meta->apply_url->value();
+  echo sprintf('<a href="%s" target="_blank">%s</a>', esc_attr($url), esc_html($url));
 }
 
 
