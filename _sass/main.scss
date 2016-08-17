@@ -16,6 +16,12 @@
   display: none;
 }
 
+//Fixes (as much as possible) the form for adding jobs
+.wpjb #wpjb-main {
+  width: 100%;
+}
+
+// Theme customizations
 .blue { color: $dlf-blue; }
 
 .bg-gray {
