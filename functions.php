@@ -32,7 +32,29 @@ function theme_script_dependencies()
   wp_enqueue_script('main',  get_stylesheet_directory_uri() . '/js/main.js');
 }
 
+function dlf_wpjb_scheme($scheme, $object)
+{
+    if (isset($object->meta->custom_url)) {
+        $scheme["field"]["custom_url"]["render_callback"] = "my_render_as_link";
+    }
+
+    return $scheme;
+}
+
+/**
+ * Render a custom_url as a real URL
+ */
+function render_as_link($object)
+{
+    $url = $object->meta->custom_url->value();
+    echo sprintf('<a href="%s" target="_blank">%s</a>', esc_attr($url), esc_html($url));
+}
+
+
+// Actions
 add_action('wp_enqueue_scripts', 'theme_enqueue_styles');
 add_action('wp_enqueue_scripts', 'theme_script_dependencies');
 
+// Filters
+add_filter("wpjb_scheme", "dlf_wpjb_scheme", 10, 2);
 
