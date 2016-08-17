@@ -9,7 +9,10 @@
 
 //Temporary override of injected overlays
 
-#wpjb-file-delete, #wpjb-file-upload-overlay, #wpjb-media-library-overlay {
+#wpjb-file-delete,
+#wpjb-file-upload-overlay,
+#wpjb-media-library-overlay,
+.wpjb-submit-info {
   display: none;
 }
 
