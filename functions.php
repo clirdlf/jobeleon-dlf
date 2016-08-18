@@ -32,13 +32,28 @@ function theme_script_dependencies()
   wp_enqueue_script('main',  get_stylesheet_directory_uri() . '/js/main.js');
 }
 
+/**
+ * Customize the dlf_wpjb_scheme
+ */
 function dlf_wpjb_scheme($scheme, $object)
 {
   if (isset($object->meta->apply_url)) {
     $scheme["field"]["apply_url"];
     $scheme["field"]["apply_url"]["render_callback"] = "render_as_link";
   }
+
+  if (isset($object->meta->twitter_handle)) {
+    $scheme["field"]["twitter_handle"];
+    $scheme["field"]["twitter_handle"]["render_callback"] = "render_twitter_link";
+  }
+
   return $scheme;
+}
+
+function render_twitter_link($object)
+{
+  $url = $object->meta->twitter_handle->value();
+  echo sprintf('<i class="fa fa-twitter jobeleon-darken-color" aria-hidden="true"></i> <a target="_blank" href="https://twitter.com/%s">%s</a>', esc_attr($url), esc_html($url));
 }
 
 /**
@@ -47,7 +62,7 @@ function dlf_wpjb_scheme($scheme, $object)
 function render_as_link($object)
 {
   $url = $object->meta->apply_url->value();
-  echo sprintf('<a href="%s" target="_blank">%s</a>', esc_attr($url), esc_html($url));
+  echo sprintf('<i class="fa fa-globe jobeleon-darken-color" aria-hidden="true"></i> <a href="%s" target="_blank">%s</a>', esc_attr($url), esc_html($url));
 }
 
 
