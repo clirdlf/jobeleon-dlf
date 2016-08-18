@@ -53,7 +53,7 @@ function dlf_wpjb_scheme($scheme, $object)
 function render_twitter_link($object)
 {
   $url = $object->meta->twitter_handle->value();
-  echo sprintf('<i class="fa fa-twitter jobeleon-darken-color" aria-hidden="true"></i> <a target="_blank" href="https://twitter.com/%s">%s</a>', esc_attr($url), esc_html($url));
+  echo sprintf('<i class="wpjb-glyphs fa fa-twitter jobeleon-darken-color" aria-hidden="true"></i> <a target="_blank" href="https://twitter.com/%s">%s</a>', esc_attr($url), esc_html($url));
 }
 
 /**
@@ -62,7 +62,7 @@ function render_twitter_link($object)
 function render_as_link($object)
 {
   $url = $object->meta->apply_url->value();
-  echo sprintf('<i class="fa fa-globe jobeleon-darken-color" aria-hidden="true"></i> <a href="%s" target="_blank">%s</a>', esc_attr($url), esc_html($url));
+  echo sprintf('<i class="wpjb-glyphs fa fa-globe jobeleon-darken-color" aria-hidden="true"></i> <a href="%s" target="_blank">%s</a>', esc_attr($url), esc_html($url));
 }
 
 
