@@ -65,6 +65,19 @@ function render_as_link($object)
   echo sprintf('<i class="wpjb-glyphs fa fa-globe jobeleon-darken-color" aria-hidden="true"></i> <a href="%s" target="_blank">%s</a>', esc_attr($url), esc_html($url));
 }
 
+/**
+ * M, d is a gross format. Rewrite it as M d
+ * see https://wpjobboard.net/kb/dates-api/
+ */
+function dlf_wpjb_date_format($param)
+{
+  if($param["format"] == "M, d") {
+    $param["format"] = "M d";
+  }
+
+  return $param;
+
+}
 
 // Actions
 add_action('wp_enqueue_scripts', 'theme_enqueue_styles');
@@ -72,4 +85,4 @@ add_action('wp_enqueue_scripts', 'theme_script_dependencies');
 
 // Filters
 add_filter("wpjb_scheme", "dlf_wpjb_scheme", 10, 2);
-
+add_filter("wpjb_date_display", "dlf_wpjb_date_format");
