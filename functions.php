@@ -8,8 +8,8 @@
  * functions.php file. The child theme's functions.php file is included before
  * the parent theme's file, so the child theme functions would be used.
  *
- * @link https://codex.wordpress.org/Theme_Development
- * @link https://codex.wordpress.org/Child_Themes
+ * @link  https://codex.wordpress.org/Theme_Development
+ * @link  https://codex.wordpress.org/Child_Themes
  *
  * Functions that are not pluggable (not wrapped in function_exists()) are
  * instead attached to a filter or action hook.
@@ -19,17 +19,33 @@
  * @since Jobeleon 1.3
  */
 
+/**
+ * Add parent style
+ */
 function theme_enqueue_styles()
 {
   wp_enqueue_style('parent-style', get_template_directory_uri() . '/style.css');
 }
 
+/**
+ * Add JavaScript dependencies
+ */
 function theme_script_dependencies()
 {
   wp_enqueue_script('font-awesome', 'https://use.fontawesome.com/c1ca2c16bc.js');
   wp_enqueue_script('moment', 'https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.14.1/moment.min.js');
   wp_enqueue_script('format-google-calendar',  get_stylesheet_directory_uri() . '/js/vendor/format-google-calendar.js');
   wp_enqueue_script('main',  get_stylesheet_directory_uri() . '/js/main.js');
+}
+
+function wpjb_edit_menu()
+{
+	add_menu_page( 'Employer Dashboard', 'Jobs Dashboard', 'manage_jobs', 'jobs/dashboard.php', 'employer_dashboard', 'dashicons-admin-links', 6  );
+}
+
+function employer_dashboard()
+{
+  echo wpjb_employer_panel();
 }
 
 /**
@@ -50,6 +66,9 @@ function dlf_wpjb_scheme($scheme, $object)
   return $scheme;
 }
 
+/**
+ * Filter Twitter handle and render as a link
+ */
 function render_twitter_link($object)
 {
   $url = $object->meta->twitter_handle->value();
@@ -82,7 +101,9 @@ function dlf_wpjb_date_format($param)
 // Actions
 add_action('wp_enqueue_scripts', 'theme_enqueue_styles');
 add_action('wp_enqueue_scripts', 'theme_script_dependencies');
+add_action('admin_menu',         'wpjb_edit_menu');
 
 // Filters
-add_filter("wpjb_scheme", "dlf_wpjb_scheme", 10, 2);
+add_filter("wpjb_scheme",       "dlf_wpjb_scheme", 10, 2);
 add_filter("wpjb_date_display", "dlf_wpjb_date_format");
+
