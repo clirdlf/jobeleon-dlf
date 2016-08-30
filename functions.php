@@ -38,16 +38,6 @@ function theme_script_dependencies()
   wp_enqueue_script('main',  get_stylesheet_directory_uri() . '/js/main.js');
 }
 
-function wpjb_edit_menu()
-{
-	add_menu_page( 'Employer Dashboard', 'Jobs Dashboard', 'manage_jobs', 'jobs/dashboard.php', 'employer_dashboard', 'dashicons-admin-links', 6  );
-}
-
-function employer_dashboard()
-{
-  echo wpjb_employer_panel();
-}
-
 /**
  * Customize the dlf_wpjb_scheme
  */
@@ -101,7 +91,6 @@ function dlf_wpjb_date_format($param)
 // Actions
 add_action('wp_enqueue_scripts', 'theme_enqueue_styles');
 add_action('wp_enqueue_scripts', 'theme_script_dependencies');
-add_action('admin_menu',         'wpjb_edit_menu');
 
 // Filters
 add_filter("wpjb_scheme",       "dlf_wpjb_scheme", 10, 2);
