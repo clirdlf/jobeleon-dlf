@@ -9,6 +9,10 @@
 
 //Temporary override of injected overlays
 
+ .wpjb-none {
+   display:none;
+ }
+
 #wpjb-file-delete,
 #wpjb-file-upload-overlay,
 #wpjb-media-library-overlay,
@@ -122,4 +126,3 @@ footer {
   }
 
 }
-
