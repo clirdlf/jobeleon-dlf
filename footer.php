@@ -36,9 +36,8 @@ $full_width = in_array( basename( get_page_template() ), array("full-width.php",
     <h5>Contact</h5>
     <address>
       CLIR+DLF<br>
-      1707 L St. NW,<br>
-      Suite 650<br/>
-      Washington, DC 20036<br>
+      2221 South Clark Street<br>
+      Arlington, VA 22202<br>
       <abbr title="Phone">P:</abbr> (202) 939-4750<br>
       <abbr title="Email">E:</abbr> <a href="mailto:jobs(at)diglib(dot)org">jobs at diglib dot org</a>
     </address>
@@ -48,7 +47,8 @@ $full_width = in_array( basename( get_page_template() ), array("full-width.php",
     <h5>Elsewhere</h5>
       <ul class="list-unstyled">
         <li><a href="https://twitter.com/CLIRDLF"><i class="fa fa-twitter twitter"></i> @CLIRDLF</a></li>
-        <li><a href="https://www.diglib.org/"><i class="fa fa-rss rss"></i> Blog</a></li>
+        <li><a href="https://www.clir.org/"><i class="fa fa-rss rss"></i>CLIR Blog</a></li>
+        <li><a href="https://www.diglib.org/"><i class="fa fa-rss rss"></i>DLF Blog</a></li>
         <li><a href="https://www.linkedin.com/groups/3387265/profile"><i class="fa fa-linkedin linkedin"></i> LinkedIn</a></li>
 				<li><a href="https://diglib.org/announce/"><i class="fa fa-envelope envelope"></i> DLF-Announce</a></li>
       </ul>
@@ -76,7 +76,8 @@ $full_width = in_array( basename( get_page_template() ), array("full-width.php",
       <div class="footer-alt">
         <p class="pull-right">&nbsp;</p>
         <p class="logo">
-          <a href="https://diglib.org"><i class="icon-dlf-logo blue"></i> <span class="dlf">DLF</span></a>
+          <a href="https://www.clir.org/"><i class="icon-clir-logo-square clir-color"></i> <span class="clir clir-font clir-color">CLIR</span></a>
+          <a href="https://diglib.org/"><i class="icon-dlf-logo blue"></i> <span class="dlf">DLF</span></a>
         </p>
       </div>
     </div>
