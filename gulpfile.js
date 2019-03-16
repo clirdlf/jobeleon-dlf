@@ -1,24 +1,24 @@
-const gulp        = require('gulp');
+const gulp = require('gulp');
 const browserSync = require('browser-sync');
-const sass        = require('gulp-sass');
-const prefix      = require('gulp-autoprefixer');
-const cp          = require('child_process');
-const sourcemaps  = require('gulp-sourcemaps');
+const sass = require('gulp-sass');
+const prefix = require('gulp-autoprefixer');
+const cp = require('child_process');
+const sourcemaps = require('gulp-sourcemaps');
 
 const server = browserSync.create();
 
-const dev_url     = "localhost:8888/wordpress"
+const dev_url = "localhost:8888/wordpress"
 
 sass.compiler = require('node-sass');
 
 // BrowserSync
 function browser_sync(done) {
   browserSync.init(files, {
-      server: {
-        proxy: dev_url,
-        port: 8888,
-        injectChanges: true
-      }
+    server: {
+      proxy: dev_url,
+      port: 8888,
+      injectChanges: true
+    }
   });
   done();
 }
@@ -62,7 +62,7 @@ gulp.task('browser-sync', function() {
 //     .pipe(browserSync.reload({stream:true}))
 //     .pipe(gulp.dest('stylesheets'));
 // });
-gulp.task('sass', function () {
+gulp.task('sass', function() {
   return gulp.src('./_sass/main.scss')
     .pipe(sass({
       outputStyle: 'compressed',
@@ -76,7 +76,7 @@ gulp.task('sass', function () {
 });
 
 gulp.task('watch', function() {
-  gulp.watch('_sass/main.scss', gulp.series('sass'));
+  gulp.watch('_sass/**.scss', gulp.series('sass'));
 });
 
 gulp.task('default', gulp.series('browser-sync', 'watch'));

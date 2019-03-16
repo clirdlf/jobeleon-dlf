@@ -3,7 +3,7 @@
 
   $(document).ready(function() {
     var CALENDAR_ID = 'g2hval0pee3rmrv4f3n9hp9cok@group.calendar.google.com';
-    var API_KEY     = 'AIzaSyA5W2MDJs9uknQv6Cn4OZ07K-wtvkoqYwE';
+    var API_KEY = 'AIzaSyA5W2MDJs9uknQv6Cn4OZ07K-wtvkoqYwE';
 
     // see https://developers.google.com/google-apps/calendar/v3/reference/events/list#parameters
     var extra_params = {

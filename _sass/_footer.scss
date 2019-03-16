@@ -1,7 +1,6 @@
 @import "variables";
 
 footer {
-
   padding-top: 25px;
   margin-top: 15px;
 
@@ -12,16 +11,19 @@ footer {
     font-weight: 700;
     letter-spacing: 1px;
   }
+
   a {
     color: #97a0af;
-		// color: #00040c;
+    // color: #00040c;
     &:hover {
       color: $link_color;
     }
   }
+
   ul li {
     margin: 5px 0;
   }
+
   .footer-alt {
     border-top: 1px solid rgba(151, 160, 175, 0.2);
     margin-top: 30px;
@@ -30,14 +32,26 @@ footer {
     .logo {
       color: #97a0af !important;
       margin-bottom: 0;
+
       i {
         margin-right: 5px;
       }
     }
   }
 
-  .twitter  { color: $twitter-blue; }
-  .linkedin { color: $linkedin-blue; }
-  .rss      { color: $rss-orange; }
-  .envelope { color: $envelope-red; }
+  .twitter {
+    color: $twitter-blue;
+  }
+
+  .linkedin {
+    color: $linkedin-blue;
+  }
+
+  .rss {
+    color: $rss-orange;
+  }
+
+  .envelope {
+    color: $envelope-red;
+  }
 }
