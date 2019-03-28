@@ -4,6 +4,16 @@ footer {
   padding-top: 25px;
   margin-top: 15px;
 
+  .clir-color {
+    color: $clir-burgundy;
+  }
+
+  .clir-font {
+    font-family: 'A028', serif;
+    font-size: 24px;
+    margin-left: 3px;
+  }
+
   h5 {
     color: #333;
     font-size: 15px;

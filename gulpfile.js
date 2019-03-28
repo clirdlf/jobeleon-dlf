@@ -7,7 +7,7 @@ const sourcemaps = require('gulp-sourcemaps');
 
 const server = browserSync.create();
 
-const dev_url = "localhost:8888/wordpress"
+const dev_url = "localhost:8888/jobs"
 
 sass.compiler = require('node-sass');
 
@@ -24,7 +24,7 @@ function browser_sync(done) {
 }
 
 function browserSyncReload(done) {
-  browsersync.reload();
+  browserSync.reload();
   done();
 }
 
@@ -72,7 +72,7 @@ gulp.task('sass', function() {
       cascade: false
     }))
     .pipe(gulp.dest('./stylesheets'))
-    .pipe(browsersync.stream());
+    .pipe(browserSync.stream());
 });
 
 gulp.task('watch', function() {

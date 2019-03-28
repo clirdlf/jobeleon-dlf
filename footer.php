@@ -62,6 +62,24 @@ $full_width = in_array(basename(get_page_template()), array("full-width.php", "h
       </div>
     </div>
   </div>
+  <div class="container">
+    <div class="row">
+      <div class="col-md-12">
+        <div class="footer-alt">
+          <p class="pull-right">&nbsp;</p>
+          <p class="logo">
+            <?php
+              if (is_active_sidebar('copyright-sidebar-1')) {
+                  dynamic_sidebar('copyright-sidebar-1');
+              }
+              ?>
+            <a href="https://www.clir.org/"><i class="icon-clir-logo-square clir-color"></i> <span class="clir clir-font clir-color">CLIR</span></a>
+          </p>
+        </div>
+      </div>
+    </div>
+  </div>
+</footer>
 
   <?php wp_footer(); ?>
 
