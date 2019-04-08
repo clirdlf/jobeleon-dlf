@@ -130,14 +130,14 @@ function clir_widgets_init()
     'after_title' => '</h5>',
   ));
     register_sidebar(array(
-  'name' => 'Copyright Sidebar',
-  'id' => 'copyright-sidebar-1',
-  'description' => 'Appears in the copyright area',
-  'before_widget' => '',
-  'after_widget' => '',
-  'before_title' => '',
-  'after_title' => '',
-));
+      'name' => 'Copyright Sidebar',
+      'id' => 'copyright-sidebar-1',
+      'description' => 'Appears in the copyright area',
+      'before_widget' => '',
+      'after_widget' => '',
+      'before_title' => '',
+      'after_title' => '',
+    ));
 }
 
 // Actions
