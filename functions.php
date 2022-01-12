@@ -25,7 +25,6 @@
 function theme_enqueue_styles()
 {
     wp_enqueue_style('parent-style', get_template_directory_uri() . '/style.css');
-    // wp_enqueue_style('bootstrap', 'https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css');
     wp_enqueue_style('bootstrap', 'https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css');
     wp_enqueue_style('logocolors', 'https://cdn.rawgit.com/clirdlf/logo-fonts/master/style.min.css');
     wp_enqueue_style('logofonts', 'https://cdn.rawgit.com/clirdlf/logo-fonts/master/clir-font/stylesheet.min.css');
@@ -36,7 +35,8 @@ function theme_enqueue_styles()
 */
 function theme_script_dependencies()
 {
-    wp_enqueue_script('font-awesome', 'https://use.fontawesome.com/c1ca2c16bc.js');
+    wp_enqueue_script('font-awesome-6', 'https://kit.fontawesome.com/ca0736de6c.js');
+
     wp_enqueue_script('moment', 'https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.14.1/moment.min.js');
     wp_enqueue_script('format-google-calendar', get_stylesheet_directory_uri() . '/js/vendor/format-google-calendar.js');
     wp_enqueue_script('main', get_stylesheet_directory_uri() . '/js/main.js');
@@ -66,7 +66,7 @@ function dlf_wpjb_scheme($scheme, $object)
 function render_twitter_link($object)
 {
     $url = $object->meta->twitter_handle->value();
-    echo sprintf('<i class="wpjb-glyphs fa fa-twitter jobeleon-darken-color" aria-hidden="true"></i> <a target="_blank" href="https://twitter.com/%s">%s</a>', esc_attr($url), esc_html($url));
+    echo sprintf('<i class="wpjb-glyphs fab fa-twitter jobeleon-darken-color" aria-hidden="true"></i> <a target="_blank" href="https://twitter.com/%s">%s</a>', esc_attr($url), esc_html($url));
 }
 
 /**
@@ -75,7 +75,7 @@ function render_twitter_link($object)
 function render_as_link($object)
 {
     $url = $object->meta->apply_url->value();
-    echo sprintf('<i class="wpjb-glyphs fa fa-globe jobeleon-darken-color" aria-hidden="true"></i> <a href="%s" target="_blank">%s</a>', esc_attr($url), esc_html($url));
+    echo sprintf('<i class="wpjb-glyphs fas fa-globe jobeleon-darken-color" aria-hidden="true"></i> <a href="%s" target="_blank">%s</a>', esc_attr($url), esc_html($url));
 }
 
 /**
