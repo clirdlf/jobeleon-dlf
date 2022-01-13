@@ -36,10 +36,6 @@ function theme_enqueue_styles()
 function theme_script_dependencies()
 {
     wp_enqueue_script('font-awesome-6', 'https://kit.fontawesome.com/ca0736de6c.js');
-
-    wp_enqueue_script('moment', 'https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.14.1/moment.min.js');
-    wp_enqueue_script('format-google-calendar', get_stylesheet_directory_uri() . '/js/vendor/format-google-calendar.js');
-    wp_enqueue_script('main', get_stylesheet_directory_uri() . '/js/main.js');
 }
 
 /**
