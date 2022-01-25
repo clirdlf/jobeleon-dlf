@@ -32,48 +32,44 @@ $full_width = in_array(basename(get_page_template()), array("full-width.php", "h
 
   <div class="container" role="contentinfo">
     <div class="row">
-      <div class="col-md-3 col-sm-6">
+      <div class="col-md-4 col-sm-12">
         <?php
           if (is_active_sidebar('footer-sidebar-1')) {
               dynamic_sidebar('footer-sidebar-1');
           }
           ?>
       </div>
-      <div class="col-md-3 col-sm-6">
+      <div class="col-md-4 col-sm-12">
         <?php
           if (is_active_sidebar('footer-sidebar-2')) {
               dynamic_sidebar('footer-sidebar-2');
           }
           ?>
       </div>
-      <div class="col-md-3 col-sm-6">
+      <div class="col-md-4 col-sm-12">
         <?php
           if (is_active_sidebar('footer-sidebar-3')) {
               dynamic_sidebar('footer-sidebar-3');
           }
           ?>
       </div>
-      <div class="col-md-3 col-sm-6">
-        <?php
-          if (is_active_sidebar('footer-sidebar-4')) {
-              dynamic_sidebar('footer-sidebar-4');
-          }
-          ?>
-      </div>
     </div>
   </div>
+
+
   <div class="container">
     <div class="row">
       <div class="col-md-12">
         <div class="footer-alt">
-          <p class="pull-right">&nbsp;</p>
           <p class="logo">
             <?php
-              if (is_active_sidebar('copyright-sidebar-1')) {
-                  dynamic_sidebar('copyright-sidebar-1');
-              }
+              // if (is_active_sidebar('copyright-sidebar-1')) {
+              //     dynamic_sidebar('copyright-sidebar-1');
+              // }
               ?>
-            <a href="https://www.clir.org/"><i class="icon-clir-logo-square clir-color"></i> <span class="clir clir-font clir-color">CLIR</span></a>
+            <a href="https://www.clir.org/" class="none" target="_blank">
+              <span class="clir clir-font clir-color">CLIR</span>
+            </a>
           </p>
         </div>
       </div>

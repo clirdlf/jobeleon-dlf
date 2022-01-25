@@ -1,11 +1,14 @@
 {
   "name": "jobeleon-dlf",
-  "version": "1.0.0",
+  "version": "1.1.0",
   "description": "Jobeleon customizations",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "dev": "gulp"
   },
+  "browserslist": [
+    "defaults"
+  ],
   "repository": {
     "type": "git",
     "url": "git+https://github.com/clirdlf/jobeleon-dlf.git"
@@ -20,8 +23,7 @@
     "browser-sync": "^2.27.7",
     "gulp": "^4.0.2",
     "gulp-autoprefixer": "^8.0.0",
-    "gulp-sass": "^5.0.0",
-    "gulp-sourcemaps": "^3.0.0",
-    "set-value": ">=4.0.1"
+    "gulp-sass": "^5.1.0",
+    "sass": "^1.48.0"
   }
 }

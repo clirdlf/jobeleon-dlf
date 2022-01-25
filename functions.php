@@ -25,7 +25,7 @@
 function theme_enqueue_styles()
 {
     wp_enqueue_style('parent-style', get_template_directory_uri() . '/style.css');
-    wp_enqueue_style('bootstrap', 'https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css');
+    wp_enqueue_style('bootstrap5', 'https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css');
     wp_enqueue_style('logocolors', 'https://cdn.rawgit.com/clirdlf/logo-fonts/master/style.min.css');
     wp_enqueue_style('logofonts', 'https://cdn.rawgit.com/clirdlf/logo-fonts/master/clir-font/stylesheet.min.css');
 }
@@ -116,24 +116,24 @@ function clir_widgets_init()
     'before_title' => '<h5>',
     'after_title' => '</h5>',
   ));
-    register_sidebar(array(
-    'name' => 'Footer Sidebar 4',
-    'id' => 'footer-sidebar-4',
-    'description' => 'Appears in the footer area',
-    'before_widget' => '',
-    'after_widget' => '',
-    'before_title' => '<h5>',
-    'after_title' => '</h5>',
-  ));
-    register_sidebar(array(
-      'name' => 'Copyright Sidebar',
-      'id' => 'copyright-sidebar-1',
-      'description' => 'Appears in the copyright area',
-      'before_widget' => '',
-      'after_widget' => '',
-      'before_title' => '',
-      'after_title' => '',
-    ));
+  //   register_sidebar(array(
+  //   'name' => 'Footer Sidebar 4',
+  //   'id' => 'footer-sidebar-4',
+  //   'description' => 'Appears in the footer area',
+  //   'before_widget' => '',
+  //   'after_widget' => '',
+  //   'before_title' => '<h5>',
+  //   'after_title' => '</h5>',
+  // ));
+    // register_sidebar(array(
+    //   'name' => 'Copyright Sidebar',
+    //   'id' => 'copyright-sidebar-1',
+    //   'description' => 'Appears in the copyright area',
+    //   'before_widget' => '',
+    //   'after_widget' => '',
+    //   'before_title' => '',
+    //   'after_title' => '',
+    // ));
 }
 
 // Actions
