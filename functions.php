@@ -31,10 +31,11 @@ function theme_enqueue_styles()
 
 /**
 * Add JavaScript dependencies
+* @see https://developer.wordpress.org/reference/functions/wp_enqueue_script
 */
 function theme_script_dependencies()
 {
-    wp_enqueue_script('font-awesome-6', 'https://kit.fontawesome.com/ca0736de6c.js');
+    wp_enqueue_script('font-awesome-6', 'https://kit.fontawesome.com/ca0736de6c.js', array(), null, true);
 }
 
 /**
