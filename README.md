@@ -5,6 +5,22 @@ need to make sure you have downloaded the latest version of the theme
 (`1.3.1` at the time of this development) and placed in your `themes`
 directory.
 
+## Upgrade Bootstrap
+
+In order to decrease render-blocking for the entire Bootstrap library,
+a customized version of the used Bootrap library is used and compiled
+using SASS (see https://getbootstrap.com/docs/5.0/customize/sass/).
+
+### Updating
+
+```
+npm update
+```
+
+Then you can run either the `gulp watch` or `gulp style` tasks to
+recompile the SASS file into `stylesheets/main.css`. The only required
+modules are `containers` and `grid`.
+
 ## Development Setup
 
 I'm assuming you're using [MAMP](https://www.mamp.info). If you're doing

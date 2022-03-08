@@ -25,7 +25,6 @@
 function theme_enqueue_styles()
 {
     wp_enqueue_style('parent-style', get_template_directory_uri() . '/style.css');
-    wp_enqueue_style('bootstrap5', 'https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css');
     wp_enqueue_style('logocolors', 'https://cdn.rawgit.com/clirdlf/logo-fonts/master/style.min.css');
     wp_enqueue_style('logofonts', 'https://cdn.rawgit.com/clirdlf/logo-fonts/master/clir-font/stylesheet.min.css');
 }

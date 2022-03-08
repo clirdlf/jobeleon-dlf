@@ -3,8 +3,16 @@
 // @import 'https://cdn.rawgit.com/clirdlf/logo-fonts/master/style.min.css';
 // @import 'https://cdn.rawgit.com/clirdlf/logo-fonts/master/clir-font/stylesheet.min.css';
 // @import 'variables'; // @import 'fonts';
-@import 'footer';
 // @import 'maps';
 // @import 'jobeleon_overrides';
 
 @charset "utf-8";
+// @see https://getbootstrap.com/docs/5.0/customize/sass/
+@import "../node_modules/bootstrap/scss/functions";
+@import "../node_modules/bootstrap/scss/variables";
+@import "../node_modules/bootstrap/scss/mixins";
+
+@import "../node_modules/bootstrap/scss/containers";
+@import "../node_modules/bootstrap/scss/grid";
+
+@import 'footer';

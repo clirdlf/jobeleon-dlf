@@ -25,5 +25,8 @@
     "gulp-autoprefixer": "^8.0.0",
     "gulp-sass": "^5.1.0",
     "sass": "^1.48.0"
+  },
+  "dependencies": {
+    "bootstrap": "^5.1.3"
   }
 }
