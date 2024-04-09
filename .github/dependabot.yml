@@ -1,0 +1,12 @@
+version: 2
+# https://docs.github.com/en/code-security/dependabot/dependabot-version-updates/configuration-options-for-the-dependabot.yml-file#example-of-a-basic-setup-for-three-package-managers
+updates:
+  - package-ecosystem: "github-actions"
+    directory: "/"
+    schedule:
+      # check for weekly updates
+      interval: "weekly"
+  - package-ecosystem: "npm"
+    directory: "/"
+    schedule:
+      interval: "weekly"
