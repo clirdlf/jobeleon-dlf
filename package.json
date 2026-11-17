@@ -28,6 +28,6 @@
     "sass": "^1.107.1"
   },
   "dependencies": {
-    "bootstrap": "^5.3.8"
+    "bootstrap": "^5.3.9"
   }
 }
